@@ -8,7 +8,7 @@ EXPOSED_PORT=${EXPOSED_PORT:-25565}
 BACKEND_HOST=${BACKEND_HOST:-1.2.3.4:25565}
 
 set -e
-sudo -V > /dev/null || apt -y install sudo
+sudo -V > /dev/null || yum -y install sudo
 
 sudo yum -y install haproxy
 
